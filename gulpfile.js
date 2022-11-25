@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 
 
 function css(done) {
-    //compiñar sass
+    //compilar sass
     //paso 1:Indentificar archivos, 2-compilar, 3-guardar
 
     src('src/scss/app.scss')
