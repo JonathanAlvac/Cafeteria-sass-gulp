@@ -11,13 +11,15 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.1"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-webp": "^4.0.1"
   },
   "dependencies": {
     "gulp-sass": "^5.1.0",
     "sass": "^1.56.1"
   },
-  "browserslist":[
+  "browserslist": [
     "last 1 version",
     "> 1% "
   ]
