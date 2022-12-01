@@ -1,3 +1,36 @@
-nav{
-    color: black ;
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    @include m.tablet {
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    a {
+        color: v.$colorBlanco;
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 1rem;
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+
+        &:hover{
+            color: v.$colorSecundario;
+        }
+
+        &.activo{
+            color: v.$colorSecundario;
+        }
+    }
+
 }

@@ -4,9 +4,13 @@
 .header {
     padding: 5rem 0;
     position: relative;
-   
 
-    &::before { // como poner una hoja de un cuaderno encima de c-header
+    @include m.tablet {
+       min-height: 70rem;
+    }
+
+    &::before {
+        // como poner una hoja de un cuaderno encima de c-header
         content: '';
         background-color: v.$colorNegro;
         position: absolute;
@@ -19,6 +23,18 @@
 
     .contenido-header {
         position: relative; //se pone adelante con el relative
+
+        h1{
+            text-align: center;
+            color: v.$colorBlanco;
+            text-transform: uppercased;
+            margin-top: 5rem;
+
+            @include m.tablet { 
+                margin-top:10rem;
+            }
+
+        }
     }
 }
 

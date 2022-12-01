@@ -1,17 +1,20 @@
 // Fuentes
- $fuentePrincipal :'Roboto', sans-serif;
+ $fuentePrincipal: 'Raleway', sans-serif;
+ $fuenteSecundaria: 'Roboto', sans-serif;
+ $fuenteCursiva: 'Bona Nova', serif;
  
 //Media queries
 $telefono: 480px;
-$tablets: 768px;
+$tablet: 768px;
 $desktop: 1024px;
 
 //colores
-$colorPrimario: #E8505B;
-$colorSecundario: #455A64;
+$colorPrimario: #5E311E;
+$colorSecundario: #C39C63;
 $colorNegro: #000000;
 $colorBlanco: #FFFFFF;
 $colorGris: #eceeef;
+$cafeClaro: #ebe7de;
 
 //unidades
 $separacion: 5rem;
