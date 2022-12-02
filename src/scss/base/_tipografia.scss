@@ -24,7 +24,7 @@ h2 {
         display: block;
     }
 
-    &::after{
+    &::after {
         content: '';
         display: block;
         width: 10rem;
@@ -35,6 +35,20 @@ h2 {
         background-position: center center;
         background-size: 10rem;
     }
+}
+
+.heading-blanco {
+    @extend h2;
+    color: v.$colorBlanco;
+
+    span {
+        color: v.$colorBlanco;
+    }
+
+    &::after{
+        display: none;
+    }
+
 }
 
 h3 {

@@ -19,8 +19,16 @@
 
 }
 
-@mixin grid($columnas, $espaciado){
+@mixin grid($columnas, $fr, $espaciadoC, ) {
+    display: grid;
+    grid-template-columns: repeat($columnas, $fr);
+    gap: $espaciadoC;
+
+}
+
+@mixin gridw2($columnas, $espaciadoC, $espaciadoR) {
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
-    column-gap: $espaciado;
+    column-gap: $espaciadoC;
+    row-gap: $espaciadoR;
 }
