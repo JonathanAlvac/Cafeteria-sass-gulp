@@ -343,10 +343,12 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -419,6 +421,8 @@ h3 {
 .header {
   padding: 5rem 0;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-width: 768px) {
   .header {
@@ -452,6 +456,10 @@ h3 {
 
 .header-inicio {
   background-image: url(../img/header_inicio.jpg);
+}
+
+.header-nosotros {
+  background-image: url(../img/header_nosotros.jpg);
 }
 
 .nav-principal {
@@ -506,6 +514,57 @@ h3 {
     width: 20rem;
     margin: 0;
   }
+}
+
+.footer {
+  background-color: #5E311E;
+}
+.footer .contenido-footer {
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.footer .copyright {
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  color: #FFFFFF;
+}
+
+.footer-cajas {
+  font-family: "Bona Nova", serif;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer-cajas {
+    margin-bottom: 0;
+  }
+}
+.footer-cajas h3 {
+  font-family: "Bona Nova", serif;
+  margin: 0 0 1rem 0;
+  font-size: 2.4rem;
+  color: #C39C63;
+}
+.footer-cajas p,
+.footer-cajas a {
+  font-size: 2rem;
+  margin: 0;
+}
+.footer-cajas a {
+  transition: all 300ms;
+}
+.footer-cajas a:hover {
+  background-color: #ebe7de;
+  display: block;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contenido-principal {
