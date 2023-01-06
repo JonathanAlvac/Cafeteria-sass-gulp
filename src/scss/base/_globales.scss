@@ -1,46 +1,48 @@
 @use 'variables' as v;
 
-html{
+html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-family: v.$fuenteSecundaria;
     font-size: 1.6rem;
     background-color: v.$cafeClaro;
 }
 
-p{
+p {
     color: v.$colorNegro;
     font-size: 1.6rem;
     line-height: 2;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.contenedor{
+.contenedor {
     width: 95%;
     max-width: 120rem;
-    margin: 0 auto;;
+    margin: 0 auto;
+    ;
 }
 
-a{
+a {
     text-decoration: none;
     color: v.$colorNegro;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-

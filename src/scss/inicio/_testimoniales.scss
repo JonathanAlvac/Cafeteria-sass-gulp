@@ -1,14 +1,14 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.nuestros-testimoniales{
+.nuestros-testimoniales {
     padding: 10 2rem;
 
-    @include m.tablet { 
+    @include m.tablet {
         padding: 10rem;
     }
 
-    .testimonial{
+    .testimonial {
         background-color: v.$cafeClaro;
         padding: 2rem 4rem;
         width: 60%;
@@ -17,7 +17,7 @@
         border-radius: 1rem;
     }
 
-    .author{
+    .author {
         text-align: right;
         font-size: 2.4rem;
         color: v.$colorPrimario;

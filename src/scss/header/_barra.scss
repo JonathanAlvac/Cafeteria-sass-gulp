@@ -1,21 +1,21 @@
 @use 'base/mixins' as m;
 
-.barra{
+.barra {
     display: flex;
     flex-direction: column;
- 
 
-    @include m.tablet { 
+
+    @include m.tablet {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    .logo{
+    .logo {
         width: 50%;
         margin: 0 auto;
 
-        @include m.tablet { 
+        @include m.tablet {
             width: 20rem;
             margin: 0;
         }
